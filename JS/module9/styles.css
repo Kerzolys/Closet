@@ -1,0 +1,125 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.blockCard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+.card {
+    width: 200px;
+    margin: 20px;
+}
+
+.card-image {
+    display: block;
+    width: 200px;
+    height: 150px;
+}
+
+.button {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    box-shadow: none;
+    cursor: pointer;
+    margin: 5px 10px;
+    padding: 10px 15px;
+    border-radius: 1px;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: white;
+    background: #315efb;
+    transition: 0.3s;
+}
+
+.button:hover {
+    box-shadow: 0px 2px 8px 2px rgba(141, 150, 178, .3);
+    transform: scale(1.05);
+}
+
+.button2 {
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+    background: rgba(230, 159, 230, 0.562);
+    margin: 5px 10px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    color: white;
+    transition: 1s;
+}
+
+.button2:hover {
+    box-shadow: 0px 2px 8px 2px black;
+    transform: scale(1.02);
+}
+
+.input-area {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 10px;
+    max-width: 200px;
+}
+
+.input-area label,
+input {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-area_input {
+    border: 1.5px solid #424d11;
+    border-radius: 5px;
+}
+
+.input-area_input__submit {
+    background: #315efb;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+}
+
+.input-area_input__submit:hover {
+    box-shadow: 0px 2px 8px 2px #493f3f;
+    transform: scale(1.02);
+}
+
+.input-area_button {
+    background: #315efb;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+}
+
+.input-area_button:hover {
+    box-shadow: 0px 2px 8px 2px #493f3f;
+    transform: scale(1.02);
+}
+
+.imageBlock {
+    display: inline-block;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.imageBlock_image {
+    margin: 10px 20px;
+    /* border: 1px solid black; */
+}
