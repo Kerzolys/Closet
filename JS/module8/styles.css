@@ -1,0 +1,26 @@
+body {
+    margin: 20px;
+    background-color: rgba(107, 101, 101, 0.801);
+}
+
+h1,
+p,
+h2 {
+    margin-left: 10px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    color: brown;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.red {
+    color: red;
+}
