@@ -53,13 +53,13 @@ button:hover {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    overflow-y: scroll;
 }
 
 .input-area {
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* max-width: 300px; */
 }
 
 .input {
@@ -78,6 +78,14 @@ button:hover {
     color: red;
     font-weight: bold;
     align-self: flex-end;
+}
+
+.received,
+.send {
+    border: grey solid 2px;
+    border-radius: 20%;
+    padding: 10px 10px;
+    margin-bottom: 10px;
 }
 
 .error {
