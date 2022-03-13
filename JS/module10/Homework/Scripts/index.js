@@ -66,7 +66,7 @@ function sendMessage() {
 function writeToChat(message, isReceived) {
     let messageHTML = `<div class="${isReceived ? 'received' : 'send'}">${message}</div>`
     chatInput.classList.remove('error');
-    chatInput.value === '';
+    chatInput.value = '';
     chatOutput.innerHTML += messageHTML;
 }
 
@@ -92,5 +92,11 @@ function locationError() {
 geoBtn.addEventListener('click', getGeo)
 
 sendBtn.addEventListener('click', sendMessage);
+chatInput.addEventListener('keypress', (event) => {
+    if (event.keyCode === 13) {
+        sendMessage();
+    }
+});
+
 
 window.addEventListener('load', console.log('ok'))
