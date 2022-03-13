@@ -1,6 +1,3 @@
-const square = document.querySelector('.square')
-
-
 //Модуль 10.3, Задание 1
 
 const button = document.querySelector('.js-button');
