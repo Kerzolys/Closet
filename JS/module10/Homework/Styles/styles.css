@@ -19,7 +19,7 @@ button {
     outline: none;
     border: none;
     cursor: pointer;
-    margin: 5px 15px;
+    margin: 5px 6px;
     padding: 10px 15px;
     font-size: 13px;
     line-height: 15px;
@@ -46,7 +46,7 @@ button:hover {
 }
 
 .chat {
-    width: 300px;
+    width: 370px;
     height: 200px;
     border: black solid 1px;
     background-color: rgba(128, 128, 128, 0.233);
@@ -63,7 +63,8 @@ button:hover {
 }
 
 .input {
-    padding: 9px 36px;
+    margin-right: 6px;
+    padding: 9px 5px;
     background-color: rgba(128, 128, 128, 0.233);
     border: black solid 1px;
 }
@@ -72,6 +73,8 @@ button:hover {
     color: blue;
     font-style: italic;
     align-self: flex-start;
+    max-width: 50%;
+    box-sizing: border-box;
 }
 
 .chat .send {
@@ -85,7 +88,7 @@ button:hover {
     border: grey solid 2px;
     border-radius: 20%;
     padding: 10px 10px;
-    margin-bottom: 10px;
+    margin: 5px 5px;
 }
 
 .error {

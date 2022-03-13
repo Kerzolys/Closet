@@ -39,6 +39,7 @@ const outputStatus = document.querySelector('.js-output');
 const chatOutput = document.querySelector('.js-chat');
 const chatInput = document.querySelector('.js-input');
 const sendBtn = document.querySelector('.js-send-button');
+const geoBtn = document.querySelector('.js-geo-button')
 
 // socket не работает, пишут, что сайт более недоступен
 const wsUrl = "wss://echo.websocket.org/";
@@ -71,6 +72,27 @@ function writeToChat(message, isReceived) {
     chatInput.value === '';
     chatOutput.innerHTML += messageHTML;
 }
+
+function getGeo() {
+    if ('geolocation' in navigator) {
+        writeToChat('Geolocation is in progress', true);
+        navigator.geolocation.getCurrentPosition(locationSuccess, locationError);
+    } else {
+        writeToChat('Geolocation is not supported', true)
+    }
+}
+
+function locationSuccess(position) {
+    let mapLink = `https://www.openstreetmap.org/export#map=10/${position.coords.latitude}/${position.coords.longitude}`;
+
+    writeToChat(`<a href="${mapLink}" target="_blank">Your geo is..</a>`, true)
+}
+
+function locationError() {
+    writeToChat('Geolocation is not availible', true)
+}
+
+geoBtn.addEventListener('click', getGeo)
 
 sendBtn.addEventListener('click', sendMessage);
 
