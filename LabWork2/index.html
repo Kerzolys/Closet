@@ -122,11 +122,13 @@
                                 placeholder="What is your name:"></label>
                         <label class="label">Phone<input class="subtitle input" type="tel"
                                 placeholder="Your phone number:"></label>
-                        <input class="checkbox mobile" type="checkbox">
-
                         <button class="button">Submit</button>
                     </div>
-                    <input class="checkbox checkbox-black" type="checkbox">
+                    <input class="checkbox mobile" type="checkbox" id="checkbox">
+                    <label for="checkbox" class="label label-checkbox">                       
+                               I agree to the processing of personal data
+                           </label>
+                    <!-- <input class="checkbox checkbox-black" type="checkbox"> -->
                 </div>
             </div>
             <div class="repairs-block-types-content container">
@@ -207,7 +209,14 @@
                             placeholder="Your phone number:"></label>
                     <label class="label">Email <input class="subtitle input" type="text"
                             placeholder="Your email"></label>
-                    <input class="checkbox" type="checkbox">
+
+                    <div class="measurement-block-checkbox-content">
+                        <input class="checkbox mobile white" type="checkbox" id="checkbox2">
+                        <label for="checkbox2" class="label label-checkbox white">
+                            I agree to the processing of personal data
+                        </label>
+
+                    </div>
                     <button class="button">Call the measurer</button>
                 </div>
             </div>
@@ -300,8 +309,12 @@
                         <label class="label label-question">Question <input class="subtitle input" type="text"
                             placeholder="I want to know:"></label>
                     </div>
-
-                    <input class="checkbox" type="checkbox">
+                    <div class="contacts-block-question-content-checkbox-content">
+                        <input class="checkbox mobile white" type="checkbox" id="checkbox3">
+                        <label for="checkbox3" class="label label-checkbox white">
+                            I agree to the processing of personal data
+                        </label>
+                    </div>
                     <button class="button">submit</button>
                 </div>
                 <div class="contacts-block-contacts-content">
