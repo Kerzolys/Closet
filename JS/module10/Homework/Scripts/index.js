@@ -39,20 +39,20 @@ const sendBtn = document.querySelector('.js-send-button');
 const geoBtn = document.querySelector('.js-geo-button')
 
 // socket не работает, пишут, что сайт более недоступен
-const wsUrl = "wss://echo.websocket.org/";
+const wsUrl = "wss://echo-ws-service.herokuapp.com/";
 
 let socket = new WebSocket(wsUrl);
 
 socket.onopen = () => {
-    outputStatus.innerHTML = 'Connection is up'
+    outputStatus.innerHTML = 'Connection is up';
+}
+
+socket.onmessage = (event) => {
+    writeToChat(event.data, true);
 }
 
 socket.onerror = () => {
     outputStatus.innerHTML = 'Connection is failed'
-}
-
-socket.onmessage = (event) => {
-    writeToChat(event.data, true)
 }
 
 function sendMessage() {
@@ -60,6 +60,7 @@ function sendMessage() {
         chatInput.classList.add('error');
         return;
     };
+    socket.send(chatInput.value);
     writeToChat(chatInput.value, false);
 }
 
@@ -82,7 +83,7 @@ function getGeo() {
 function locationSuccess(position) {
     let mapLink = `https://www.openstreetmap.org/export#map=10/${position.coords.latitude}/${position.coords.longitude}`;
 
-    writeToChat(`<a href="${mapLink}" target="_blank">Your geo is..</a>`, true)
+    writeToChat(`<a href="${mapLink}" target="_blank">My geo is..</a>`, false)
 }
 
 function locationError() {
