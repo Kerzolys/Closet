@@ -1,0 +1,38 @@
+body {
+    margin: 0 auto;
+}
+
+.wrapper {
+    margin-top: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    gap: 10px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgba(3, 40, 121, 0.7);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, .4);
+    transition: transform .4s ease;
+    color: white;
+    text-transform: uppercase;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+input {
+    outline: none;
+}
