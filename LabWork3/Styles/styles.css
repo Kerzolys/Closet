@@ -129,19 +129,11 @@ td {
     color: #FFFFFF;
 }
 
-
-/* .completed-works_text__arrow .left {
-    margin-right: 122.77px;
-} */
-
 .completed-works_text__dots {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 17.54px;
-    /* position: absolute; */
-    /* margin-left: 29.5px;
-    margin-right: 29.5px; */
 }
 
 .completed-works_text__dots .slider_dots-item {
@@ -163,7 +155,6 @@ td {
     flex-direction: row;
     justify-content: space-between;
     align-self: 61px;
-    /* gap: 6px; */
     margin-bottom: 52.68px;
 }
 
