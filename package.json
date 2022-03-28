@@ -4,10 +4,11 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "jest"
+        "test": "jest",
+        "scss": "node-sass -watch scss -o css"
     },
     "keywords": [],
-    "author": "",
+    "author": "Kerzolys <kerzolys@gmail.com>",
     "license": "ISC",
     "devDependencies": {
         "@babel/cli": "^7.17.6",
@@ -17,6 +18,8 @@
         "jest": "^27.5.1"
     },
     "dependencies": {
+        "node-sass": "^7.0.1",
         "package.json": "^2.0.1"
-    }
+    },
+    "repository": "https://github.com/kerzolys/closet.git"
 }

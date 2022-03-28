@@ -11,57 +11,65 @@
 <body>
     <h1>LabWork 3. Slider</h1>
     <section class="completed-works">
-        <div class="completed-works_text">
+        <div class="text-block">
             <h2>Completed projects</h2>
-            <p class="subtitle">Only a small part of the work performed by our company is presented <br> on the site. For 14 years on in the construction <br> market we have made happy more than 1000 families</p>
-            <table class="completed-works_text__table">
+            <p class="text-block__subtitle">Only a small part of the work performed by our company is presented <br> on the site. For 14 years on in the construction <br> market we have made happy more than 1000 families</p>
+            <table class="table">
                 <tr>
-                    <th class="title city">
+                    <th class="table__title table__title_city">
                         <h3>city:</h3>
                     </th>
-                    <th class="title area">
+                    <th class="table__title table__title_area">
                         <h3>apartment area:</h3>
                     </th>
                 </tr>
                 <tr>
-                    <td class="subtitle city">
-                        <h4>Rostov-on-Don <br> LCD admiral</h4>
+                    <td class="table__subtitle table__subtitle_city js-info-city">
+                        <!-- <h4>Rostov-on-Don <br> LCD admiral</h4> -->
+                        <!-- <h4></h4> -->
+
                     </td>
-                    <td class="subtitle area">
-                        <h4>81 m2</h4>
+                    <td class="table__subtitle table__subtitle_area js-info-area">
+                        <!-- <h4>81 m2</h4> -->
+                        <!-- <h4></h4> -->
+
                     </td>
                 </tr>
                 <tr>
-                    <th class="title time">
+                    <th class="table__title table__title_time">
                         <h3>Repair time:</h3>
                     </th>
-                    <th class="title cost">
+                    <th class="table__title table__title_cost">
                         <h3>Repair Cost:</h3>
                     </th>
                 </tr>
                 <tr>
-                    <td class="subtitle time">
-                        <h4>3.5 months</h4>
+                    <td class="table__subtitle table__subtitle_time js-info-time">
+                        <!-- <h4>3.5 months</h4> -->
+                        <!-- <h4></h4> -->
+
                     </td>
-                    <td class="subtitle cost">
-                        <h4>Upon request</h4>
+                    <td class="table__subtitle table__subtitle_cost js-info-cost">
+                        <!-- <h4>Upon request</h4> -->
+                        <!-- <h4></h4> -->
+
                     </td>
                 </tr>
 
             </table>
-            <div class="completed-works_text__arrows js-arrows">
-                <div class="completed-works_text__arrow left js-arrow"></div>
-                <div class="completed-works_text__dots js-dots"></div>
-                <div class="completed-works_text__arrow right js-arrow"></div>
+            <div class="arrows js-arrows">
+                <div class="arrows__arrow arrows__arrow_left js-arrow"></div>
+                <div class="arrows__dots js-dots"></div>
+                <div class="arrows__arrow arrows__arrow_right js-arrow"></div>
             </div>
         </div>
-        <div class="completed-works_slider">
-            <div class="completed-works_slider__titles js-titles">
-                <h3 class="title active">Rostov-on-Don, Admiral</h3>
-                <h3 class="title">Sochi Thieves</h3>
-                <h3 class="title">Rostov-on-Don Patriotic</h3>
+        <div class="slider-block">
+            <div class="slider-block__titles js-titles">
+                <h3 class="slider-block__title js-title active">Rostov-on-Don, Admiral</h3>
+                <h3 class="slider-block__title js-title">Sochi Thieves</h3>
+                <h3 class="slider-block__title js-title">Rostov-on-Don Patriotic</h3>
             </div>
-            <div class="completed-works_slider__images js-slider_images"></div>
+            <div class="slider-block__images js-slider_images"></div>
         </div>
     </section>
     <script src="./Scripts/index.js"></script>

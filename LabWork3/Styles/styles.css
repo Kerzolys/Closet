@@ -15,7 +15,8 @@ h2 {
 }
 
 h3,
-.title {
+.title,
+.table__title {
     font-family: 'Yeseva One';
     font-style: normal;
     font-weight: 400;
@@ -23,20 +24,21 @@ h3,
     line-height: 25px;
     text-transform: uppercase;
     color: #E3B873;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
 }
 
 h4,
-.subtitle {
+.subtitle,
+.table__subtitle {
     font-family: 'Nunito Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 21px;
     color: #FFFFFF;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
 }
 
 .completed-works {
@@ -48,7 +50,7 @@ h4,
     justify-content: space-around;
 }
 
-.completed-works_text h2 {
+.text-block h2 {
     position: relative;
     width: 253px;
     height: 66px;
@@ -56,7 +58,7 @@ h4,
     margin-bottom: 34px;
 }
 
-.completed-works_text h2::after {
+.text-block h2::after {
     content: '';
     position: absolute;
     left: 161px;
@@ -66,34 +68,30 @@ h4,
     height: 1px;
 }
 
-.completed-works_text p {
+.text-block p {
     width: 442px;
     height: 86px;
     line-height: 27px;
     margin-bottom: 42px;
 }
 
-.completed-works_text__table h3 {
+.table .table__title {
     margin-bottom: 9px;
     margin-right: 72px;
 }
 
-.completed-works_text__table h4 {
+.table .table__subtitle {
     margin: 0;
-    margin-bottom: 34px;
+    padding-bottom: 34px;
 }
 
-.completed-works_text__table th,
+.table th,
 td {
     text-align: start;
+    min-width: 213px;
 }
 
-
-/* tr:nth-child(2) {
-    background-color: white;
-} */
-
-.completed-works_text__arrows {
+.arrows {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -104,7 +102,7 @@ td {
     position: relative;
 }
 
-.completed-works_text__arrow {
+.arrows__arrow {
     width: 40.51px;
     height: 1.34px;
     background: #FFFFFF;
@@ -113,7 +111,7 @@ td {
     cursor: pointer;
 }
 
-.left::before {
+.arrows__arrow_left::before {
     content: url('../asset/Vectors/arrow-left.png');
     position: absolute;
     top: -6.3px;
@@ -121,7 +119,7 @@ td {
     color: #FFFFFF;
 }
 
-.right::before {
+.arrows__arrow_right::before {
     content: url('../asset/Vectors/arrow-right.png');
     position: absolute;
     top: -6.3px;
@@ -129,14 +127,14 @@ td {
     color: #FFFFFF;
 }
 
-.completed-works_text__dots {
+.arrows__dots {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 17.54px;
 }
 
-.completed-works_text__dots .slider_dots-item {
+.arrows__dots .slider_dots-item {
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.3);
     width: 9.57px;
@@ -150,7 +148,7 @@ td {
     background: #ffffff;
 }
 
-.completed-works_slider__titles {
+.slider-block__titles {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -158,29 +156,29 @@ td {
     margin-bottom: 52.68px;
 }
 
-.completed-works_slider__titles .title {
+.slider-block__titles .js-title {
     cursor: pointer;
     font-size: 14px;
     line-height: 19px;
     color: rgba(255, 255, 255, 0.3);
 }
 
-.completed-works_slider__titles .title:hover,
-.completed-works_slider__titles .active {
+.slider-block__titles .js-title:hover,
+.slider-block__titles .active {
     color: #E3B873;
     text-decoration: none;
     border-bottom: 1px solid #E3B873;
     padding-bottom: 6.68px;
 }
 
-.completed-works_slider__images {
+.slider-block__images {
     width: 679px;
     height: 482px;
     position: relative;
     border: black solid 2px;
 }
 
-.completed-works_slider__images .image {
+.slider-block__images .image {
     background-size: cover;
     background-position: center center;
     width: 100%;
@@ -192,6 +190,6 @@ td {
     transition: opacity 0.9s ease;
 }
 
-.completed-works_slider__images .image.active {
+.slider-block__images .image.active {
     opacity: 1;
 }
