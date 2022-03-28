@@ -1,29 +1,30 @@
 let images = [{
-        src: './asset/image1.png',
-        title: 'Rostov-on-Don. Admiral',
-        infoCity: 'Rostov-on-Don LCD admiral',
-        infoArea: '81 m2',
-        infoTime: '3.5 months',
-        infoCost: 'Upon request'
+            src: './asset/image1.png',
+            title: 'Rostov-on-Don. Admiral',
+            infoCity: 'Rostov-on-Don\n LCD admiral',
+            infoArea: '81 m2',
+            infoTime: '3.5 months',
+            infoCost: 'Upon request'
 
-    },
-    {
-        src: './asset/image2.png',
-        title: 'Sochi. Thieves',
-        infoCity: 'Sochi Thieves',
-        infoArea: '105 m2',
-        infoTime: '4 months',
-        infoCost: 'Upon request'
-    },
-    {
-        src: './asset/image3.png',
-        title: 'Rostov-on-Don. Patriotic',
-        infoCity: 'Rostov-on-Don Patriotic',
-        infoArea: '93 m2',
-        infoTime: '3 months',
-        infoCost: 'Upon request'
-    }
-]
+        },
+        {
+            src: './asset/image2.png',
+            title: 'Sochi. Thieves',
+            infoCity: 'Sochi\n Thieves',
+            infoArea: '105 m2',
+            infoTime: '4 months',
+            infoCost: 'Upon request'
+        },
+        {
+            src: './asset/image3.png',
+            title: 'Rostov-on-Don. Patriotic',
+            infoCity: 'Rostov-on-Don\n Patriotic',
+            infoArea: '93 m2',
+            infoTime: '3 months',
+            infoCost: 'Upon request'
+        }
+    ]
+    //не работают \n
 
 function initSlider() {
     if (!images || !images.length) return;
