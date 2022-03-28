@@ -48,13 +48,10 @@ function initSlider() {
 
     changeTitles();
 
-    initInfoCity();
-    initInfoArea();
-    initInfoTime();
-    initInfoCost();
-
-
-    // changeInfo();
+    initInfo(images[0].infoCity, sliderInfoCity);
+    initInfo(images[0].infoArea, sliderInfoArea);
+    initInfo(images[0].infoTime, sliderInfoTime);
+    initInfo(images[0].infoCost, sliderInfoCost);
 
     // initAutoplay();
 
@@ -93,10 +90,10 @@ function initSlider() {
         sliderDots.querySelector('.n' + num).classList.add('active');
         sliderTitles.querySelector('.active').classList.remove('active')
         sliderTitles.querySelector('.n' + num).classList.add('active');
-        changeInfoCity(num);
-        changeInfoArea(num);
-        changeInfoTime(num);
-        changeInfoCost(num);
+        changeInfo(num, images[num].infoCity, sliderInfoCity);
+        changeInfo(num, images[num].infoArea, sliderInfoArea);
+        changeInfo(num, images[num].infoTime, sliderInfoTime);
+        changeInfo(num, images[num].infoCost, sliderInfoCost);
 
     }
 
@@ -127,57 +124,19 @@ function initSlider() {
         })
     }
 
-    function initInfoCity() {
+    function initInfo(param, sliderInfoArea) {
         let infoSpan = `
-        <span>${images[0].infoCity}
-        </span>`
-
-        sliderInfoCity.innerHTML = infoSpan;
-    }
-
-    function changeInfoCity(num) {
-        if (!images[num].infoCity) return;
-        sliderInfoCity.innerHTML = images[num].infoCity;
-    }
-
-    function initInfoArea() {
-        let infoSpan = `
-        <span>${images[0].infoArea}
+        <span>${param}
         </span>`
 
         sliderInfoArea.innerHTML = infoSpan;
     }
 
-    function changeInfoArea(num) {
-        if (!images[num].infoCity) return;
-        sliderInfoArea.innerHTML = images[num].infoArea;
+    function changeInfo(num, param, sliderInfoArea) {
+        if (!param) return;
+        sliderInfoArea.innerHTML = param;
     }
 
-    function initInfoTime() {
-        let infoSpan = `
-        <span>${images[0].infoTime}
-        </span>`
-
-        sliderInfoTime.innerHTML = infoSpan;
-    }
-
-    function changeInfoTime(num) {
-        if (!images[num].infoTime) return;
-        sliderInfoTime.innerHTML = images[num].infoTime;
-    }
-
-    function initInfoCost() {
-        let infoSpan = `
-        <span>${images[0].infoCost}
-        </span>`
-
-        sliderInfoCost.innerHTML = infoSpan;
-    }
-
-    function changeInfoCost(num) {
-        if (!images[num].infoCost) return;
-        sliderInfoCost.innerHTML = images[num].infoCost;
-    }
 
     // function initAutoplay() {
     //     setInterval(() => {
