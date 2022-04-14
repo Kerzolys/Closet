@@ -1,0 +1,33 @@
+{
+    "name": "module13",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "webpack",
+        "dev": "parcel index.js",
+        "buildParcel": "parcel build ./src/index.js",
+        "serve": "webpack serve"
+    },
+    "author": "Kerzolys",
+    "license": "ISC",
+    "dependencies": {
+        "css-loader": "^6.7.1",
+        "mini-css-extract-plugin": "^2.6.0",
+        "optimize-css-assets-webpack-plugin": "^6.0.1",
+        "parcel-bundler": "^1.12.5",
+        "style-loader": "^3.3.1",
+        "terser-webpack-plugin": "^5.3.1",
+        "webpack": "^5.70.0",
+        "webpack-cli": "^4.9.2"
+    },
+    "devDependencies": {
+        "html-webpack-plugin": "^5.5.0",
+        "pug": "^3.0.2",
+        "pug-loader": "^2.4.0",
+        "ts-loader": "^9.2.8",
+        "typescript": "^4.6.3",
+        "webpack-dev-server": "^4.7.4"
+    }
+}

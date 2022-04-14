@@ -1,0 +1,1 @@
+(()=>{"use strict";const e=document.querySelector(".container");e.innerHTML+="FUCK YOU I GET YOU",e.style.cssText="\n    font-weight: bold;\n    font-size: 50px\n",window.addEventListener("loaded",console.log("fuck"))})();

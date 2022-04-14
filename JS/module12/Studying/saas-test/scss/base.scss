@@ -1,0 +1,41 @@
+@import "variables";
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    height: 100%;
+    min-height: 100%;
+}
+
+header {
+    background-color: $base-black;
+    color: white;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: $header-margin;
+    h2 {
+        font-size: 25px;
+        color: bisque;
+    }
+    .navbar__list {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    li {
+        list-style: none;
+        cursor: pointer;
+        transition: 0.4s;
+    }
+    li:hover {
+        transform: scale(1.4);
+    }
+}
+
+main {
+    background-color: rgb(177, 196, 139);
+    color: $base-black;
+}

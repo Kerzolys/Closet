@@ -1,0 +1,1 @@
+(()=>{"use strict";console.log("fuck you webpack"),document.querySelector(".root").innerHTML="FUCK YOU"})();

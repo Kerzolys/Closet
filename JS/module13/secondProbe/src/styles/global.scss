@@ -1,0 +1,17 @@
+$mainColor: aqua;
+$fontColor: red;
+html {
+    font-size: 25px;
+    color: $fontColor;
+}
+
+body {
+    background-color: $mainColor;
+    .root {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        text-align: center;
+    }
+}

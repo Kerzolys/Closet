@@ -1,0 +1,16 @@
+html {
+    font-size: 25px;
+    color: red;
+}
+
+body {
+    background-color: aqua;
+}
+
+.root {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    text-align: center;
+}

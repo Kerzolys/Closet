@@ -1,0 +1,25 @@
+$fontColor: red;
+$bodyBackground: aquamarine;
+html {
+    font-family: GrapeNuts;
+}
+
+h1 {
+    color: $fontColor;
+}
+
+body {
+    background-color: $bodyBackground;
+}
+
+.container {
+    .image-container {
+        background: url('../images/DSCF2533.jpg');
+        background-size: contain;
+    }
+    img,
+    .image-container {
+        width: 410px;
+        height: 620px;
+    }
+}
